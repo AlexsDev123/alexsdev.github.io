@@ -1,26 +1,78 @@
+/* GENERAL */
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: #ffffff;
   color: #111827;
+  background: #ffffff;
 }
 
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 22px;
+  color: #2563eb;
+}
+
+.navbar nav a {
+  margin-left: 16px;
+  text-decoration: none;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* 🔵 ACTIVO */
+.navbar nav a.active {
+  color: #2563eb;
+}
+
+/* HOME */
+.home {
+  padding: 24px;
+}
+
+.card {
+  max-width: 360px;
+  background: #f9fafb;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.tags span {
+  display: inline-block;
+  background: #e5e7eb;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  margin: 6px 6px 0 0;
+}
+
+.link {
+  display: inline-block;
+  margin-top: 16px;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* BLOG */
 .blog-container {
   width: 100%;
-  max-width: 720px;   /* 👈 ancho tipo blog */
+  max-width: 720px;
   margin: 0 auto;
   padding: 24px 16px;
 }
 
 .breadcrumb {
-  color: #6b7280;
   font-size: 14px;
-  margin-bottom: 12px;
-}
-
-h1 {
-  font-size: 32px;
-  line-height: 1.2;
+  color: #6b7280;
   margin-bottom: 12px;
 }
 
@@ -30,12 +82,9 @@ h1 {
   margin-bottom: 24px;
 }
 
-h2 {
-  margin-top: 32px;
-}
-
-h3 {
-  margin-top: 24px;
+h1 {
+  font-size: 32px;
+  line-height: 1.2;
 }
 
 p {
@@ -43,7 +92,7 @@ p {
   margin: 16px 0;
 }
 
-a {
+.link-inline {
   color: #2563eb;
-  text-decoration: none;
+  font-weight: 500;
 }
